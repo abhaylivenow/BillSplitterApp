@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/text_enter_total_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Enter Total Amount: "/>
+
+        <EditText
+            android:id="@+id/edt_total_amount"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:textColorHint="#e6ffe6"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="12dp"
+            android:inputType="number"
+            android:paddingEnd="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_enter_total_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edt_bg"
+            android:hint="Amount"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/text_enter_tip"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Enter Tip Amount: "/>
+
+        <EditText
+            android:id="@+id/edt_tip"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="number"
+            android:textColorHint="#e6ffe6"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_enter_tip"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edt_bg"
+            android:hint="Tip"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/text_enter_tax"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Tax (in %): "/>
+
+        <EditText
+            android:id="@+id/edt_tax"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#e6ffe6"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_enter_tax"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edt_bg"
+            android:hint="Tax"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/text_number_of_people"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Number of People: "/>
+
+        <EditText
+            android:id="@+id/edt_number_of_people"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColorHint="#e6ffe6"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_number_of_people"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/edt_bg"
+            android:hint="People"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/individual_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Individual Amount: N/A"/>
+
+    <Button
+        android:id="@+id/btn_get_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Amount"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+
+
+</LinearLayout>
